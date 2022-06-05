@@ -2,6 +2,7 @@ FROM --platform=$BUILDPLATFORM golang:1.18.3-alpine3.16 AS build
 
 WORKDIR /usr/local/go/src/cmd/qnap-csi-plugin
 
+
 COPY go.mod go.sum /usr/local/go/src/cmd/qnap-csi-plugin/
 
 RUN go mod download

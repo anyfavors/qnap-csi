@@ -3,6 +3,16 @@ entries:
   qnap-csi:
   - apiVersion: v2
     appVersion: 0.1.4
+    created: "2022-06-05T16:18:00.880500168Z"
+    description: QNAP CSI Driver
+    digest: 5a13c2b2ab86940b2673c2cec5e8a14fd0f0ceb49a046bf38896c01316507699
+    name: qnap-csi
+    type: application
+    urls:
+    - https://github.com/anyfavors/qnap-csi/releases/download/qnap-csi-0.2.4/qnap-csi-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 0.1.4
     created: "2022-06-05T16:11:46.264698942Z"
     description: QNAP CSI Driver
     digest: cb6e9efcac031924ebe80e09505a56987850e134753915cd362027505ada94cb
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/anyfavors/qnap-csi/releases/download/qnap-csi-0.2.3/qnap-csi-0.2.3.tgz
     version: 0.2.3
-generated: "2022-06-05T16:11:46.264725743Z"
+generated: "2022-06-05T16:18:00.880508968Z"

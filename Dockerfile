@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM golang:1.17.6-alpine3.15 AS build
+FROM --platform=$BUILDPLATFORM golang:1.18.3-alpine3.16 AS build
 
 WORKDIR /usr/local/go/src/cmd/qnap-csi-plugin
 
@@ -13,7 +13,7 @@ ADD qnap/ /usr/local/go/src/cmd/qnap-csi-plugin/qnap/
 RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o /plugin cmd/qnap-csi-plugin/main.go
 RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH go build -o /iscsiadm cmd/iscsiadm/main.go
 
-FROM alpine:3.15.0 AS release
+FROM alpine:3.16.0 AS release
 RUN apk update && \
     apk add lsblk e2fsprogs xfsprogs util-linux-misc
 # lsblk
